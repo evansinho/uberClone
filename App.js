@@ -6,12 +6,15 @@
  * @flow strict-local
  */
 import React from 'react';
+import HomeScreen from './src/screens/HomeScreen';
+
 import {StatusBar} from 'react-native';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
+      <HomeScreen />
     </>
   );
 };
