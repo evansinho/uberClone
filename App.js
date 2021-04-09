@@ -6,7 +6,8 @@
  * @flow strict-local
  */
 import React from 'react';
-import HomeScreen from './src/screens/HomeScreen';
+// import HomeScreen from './src/screens/HomeScreen';
+import DestinationSearch from './src/screens/DestinationSearch';
 
 import {StatusBar} from 'react-native';
 
@@ -14,7 +15,7 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <HomeScreen />
+      <DestinationSearch />
     </>
   );
 };
