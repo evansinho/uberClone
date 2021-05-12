@@ -31,7 +31,7 @@ const DestinationSearch = () => {
             console.log(data, details);
           }}
           query={{
-            key: 'AIzaSyBVWth3BlVGiHTpG4oXrX241i1x3rJHB04',
+            key: 'AIzaSyDbRnz1oJywLw4rJDD104DEqQDpQxXUkpQ',
             language: 'en',
           }}
         />
