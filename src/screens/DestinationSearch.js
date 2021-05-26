@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, TextInput, SafeAreaView, StyleSheet} from 'react-native';
 
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 
 const initialState = '';
 
