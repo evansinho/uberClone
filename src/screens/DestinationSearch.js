@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, TextInput, SafeAreaView, StyleSheet} from 'react-native';
 
-import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
 const initialState = '';
 
@@ -26,6 +26,8 @@ const DestinationSearch = () => {
 
         <GooglePlacesAutocomplete
           placeholder="Search"
+          autoFocus={false}
+          fetchDetails={true}
           onPress={(data, details = null) => {
             // 'details' is provided when fetchDetails = true
             console.log(data, details);
