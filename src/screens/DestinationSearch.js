@@ -6,8 +6,8 @@ import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
 const initialState = '';
 
 const DestinationSearch = () => {
-  const [fromText, setFromText] = useState(initialState);
-  const [destinationText, setDestinationText] = useState(initialState);
+  const [originPlace, setOriginPlace] = useState(null);
+  const [destinationPlace, setDestinationPlace] = useState(null);
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -25,11 +25,11 @@ const DestinationSearch = () => {
         />
 
         <GooglePlacesAutocomplete
-          placeholder="Search"
+          placeholder="Where To"
           autoFocus={false}
           fetchDetails={true}
           onPress={(data, details = null) => {
-            // 'details' is provided when fetchDetails = true
+            setDestinationPlace({data, details});
             console.log(data, details);
           }}
           query={{
