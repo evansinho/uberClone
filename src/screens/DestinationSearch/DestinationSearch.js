@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
-import {View, TextInput, SafeAreaView, StyleSheet} from 'react-native';
+import styles from './styles';
+import {View, TextInput, SafeAreaView} from 'react-native';
 
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 
 const initialState = '';
 
 const DestinationSearch = () => {
-  const [originPlace, setOriginPlace] = useState(null);
+  // const [originPlace, setOriginPlace] = useState(null);
   const [destinationPlace, setDestinationPlace] = useState(null);
   return (
     <SafeAreaView>
@@ -41,17 +42,5 @@ const DestinationSearch = () => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 10,
-    height: '100%',
-  },
-  textInput: {
-    padding: 10,
-    backgroundColor: '#eee',
-    marginVertical: 5,
-  },
-});
 
 export default DestinationSearch;
