@@ -1,7 +1,7 @@
 import React from 'react';
-import HomeMap from '../components/HomeMap';
-import CovidMessage from '../../components/CovidMessage';
-import HomeSearch from '../components/HomeSearch';
+import HomeMap from '../../components/HomeMap/index';
+import CovidMessage from '../../components/CovidMessage/index';
+import HomeSearch from '../../components/HomeSearch/index';
 import {View} from 'react-native';
 
 const HomeScreen = () => {

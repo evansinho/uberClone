@@ -7,7 +7,7 @@
  */
 import React from 'react';
 // import HomeScreen from './src/screens/HomeScreen';
-import DestinationSearch from './src/screens/DestinationSearch';
+import DestinationSearch from './src/screens/DestinationSearch/index';
 
 import {StatusBar} from 'react-native';
 
